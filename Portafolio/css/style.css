@@ -1,0 +1,53 @@
+#card:hover{
+  background-color: red;
+  color
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+#texto {
+  color: black;
+  font-size: 10px;
+  transition: 2s;
+}
+
+div:hover #texto {
+  color: white;
+  font-size: 50px;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+
+#red {
+  width: 100px;
+  height: 10px;
+  background: red;
+  transition: height 1s;
+}
+
+a {
+  display:none;
+}
+
+#blue {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+#blue:hover #red {
+  height: 100px;
+}
+
+#blue:hover #red a {
+  display: block;
+  display-delay: 2s;
+}
