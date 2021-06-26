@@ -1,7 +1,26 @@
-#card:hover{
+#image:hover{
+  filter:blur(1px);
+}
+
+#card:hover {
   filter:brightness(0.6);
 }
 
-.card:hover {
-  filter: blur(1px);
+#card {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#absolute {
+  position: absolute;
+  top: 50%; /* Position Y halfway in */
+  left: 50%; /* Position X halfway in */
+  transform: translate(-50%,-50%); /* Move it halfway back(x,y) */
+  border: 3px solid #73AD21;
+  display: none;
+}
+
+#card:hover #absolute {
+   display: block;
 }
