@@ -1,26 +1,59 @@
-#image:hover{
-  filter:blur(1px);
-}
-
-#card:hover {
-  filter:brightness(0.6);
-}
-
 #card {
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* BORDE */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #032B2F;
+  border-radius: 0px;
 }
 
-#absolute {
+#card #capa2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width:0;
+  height:5px;
+  left: 0;
+  bottom: 0;
+  background: red;
+  transition: 2s;
+}
+#card:hover #capa2:hover::before{
+  width: 100%;
+}
+
+#card:hover #capa3{
+  filter: blur(2px);
+}
+
+#card #capa2 {
+  background-color: black;
+  filter: opacity(.5);
+  z-index: 2;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  display: none;
+}
+
+#card:hover #capa2 {
+  display: block;
+}
+
+#card h5 {
+  display: none;
   position: absolute;
   top: 50%; /* Position Y halfway in */
   left: 50%; /* Position X halfway in */
   transform: translate(-50%,-50%); /* Move it halfway back(x,y) */
-  border: 3px solid #73AD21;
-  display: none;
+  color: white;
+  z-index: 2;
 }
 
-#card:hover #absolute {
-   display: block;
+#card:hover h5{
+  display: block;
 }
