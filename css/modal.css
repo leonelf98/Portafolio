@@ -13,11 +13,7 @@
   justify-content: center; /*de izquierda hacia derecha*/
 }
 
-<<<<<<< HEAD
 .modal-1, .modal-2, .modal-3{
-=======
-.modal- {
->>>>>>> de09b4d08c8998f06c352cc1220bf06131af111b
   width: 40%;
   background-color: #fff;
   text-align: center;
@@ -48,17 +44,7 @@
   z-index: 100;
 }
 
-<<<<<<< HEAD
 .titulo, .descripcion-a, .descripcion-b{
-=======
-@media screen and (max-width:750px){
-  .modal-{
-    width: 85%;
-  }
-}
-
-.titulo, .descripcion{
->>>>>>> de09b4d08c8998f06c352cc1220bf06131af111b
   padding: 7px 5px;
   font-weight: bold;
   font-family: sans-serif;
