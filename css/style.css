@@ -8,14 +8,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   /* BORDE */
-  border-style: solid;
-  border-width: 2px;
-  border-color: #226B80;
   border-radius: 2px;
-}
-
-#card:hover #capa3{
-  filter: blur(2px);
+  border: solid 2.5px #226B80;
 }
 
 #card::before {
@@ -28,7 +22,7 @@
   position:absolute;
   top:0;
   bottom:0;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 #card:hover::before {
@@ -41,11 +35,11 @@
   display: block;
   z-index: 2;
   width:0;
-  height:7px;
+  height:10px;
   left: 0;
   bottom: 0;
-  background: #3BB4C1;
-  transition: 1.5s;
+  background-color: #FF4747;
+  transition: 1s;
 }
 
 #card:hover::after{
@@ -60,6 +54,7 @@
   color: white;
   z-index: 2;
   display: none;
+  text-align: center;
 }
 
 #card:hover h4 {
